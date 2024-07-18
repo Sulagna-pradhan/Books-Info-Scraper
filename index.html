@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book Search</h1>
+        <button id="toggle-dark-mode">Dark Mode</button>
+    </header>
+    <div id="container">
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search for books...">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="books-container"></div>
+    </div>
+    <div id="book-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-book-info"></div>
+        </div>
+    </div>
+    <div id="loading">Loading...</div>
+    <script src="script.js"></script>
+</body>
+</html>
