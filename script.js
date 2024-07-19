@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalBookInfo = document.getElementById('modal-book-info');
     const closeButton = document.getElementsByClassName('close-button')[0];
 
-    const fetchBooks = async (query = 'marvel') => {
+    const fetchBooks = async (query = 'javascript') => {
         try {
             showLoading();
             const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
